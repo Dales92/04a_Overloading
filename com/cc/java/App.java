@@ -4,19 +4,25 @@ public class App {
 
 	public static void main(String[] args) {		
 	
+		Child child = new Child();
 		
-		TestOverloading testOverloading = new TestOverloading();		
-		
-		// Überladen Methode sayHello2	
-		 testOverloading.sayHello2("Hi", 1);
-		 testOverloading.sayHello2(2,"Hu");
-		 testOverloading.sayHello2();
-		
-		
-		// Überladen Methode sayHello3
-		testOverloading.sayHello3("Hallo", 1080);
-		testOverloading.sayHello3("Hallo", "1080");
-		
-		
+
+
+		output (child.sayHello());
+		output(child.sayHello("Hi"));
 	}
+
+
+
+
+	public static void output(String outputStr) {
+	System.out.println(outputStr);
+
+	}
+
+
+
+
+
 }
+
